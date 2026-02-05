@@ -149,3 +149,19 @@ body {
         background-attachment: scroll;
     }
 }
+/* GIỚI THIỆU & Ý NGHĨA DẠNG GALLERY */
+.gallery-item p {
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.gallery-item p b {
+    color: #a8ffb0;
+}
+
+/* MOBILE GỌN HƠN */
+@media (max-width: 768px) {
+    .gallery-item p {
+        font-size: 14px;
+    }
+}
