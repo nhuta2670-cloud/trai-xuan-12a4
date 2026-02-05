@@ -280,5 +280,44 @@ body {
 .section > * {
     position: relative;
     z-index: 1;
+/* ===== MOBILE FIX ===== */
+@media (max-width: 768px) {
+
+    .container,
+    .container.reverse {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image-placeholder {
+        width: 100%;
+        height: auto;
+        border: none;
+    }
+
+    .image-placeholder img {
+        width: 100%;
+        height: auto;
+        border-radius: 12px;
+    }
+
+    .text {
+        width: 100%;
+    }
+
+    .section {
+        padding: 80px 16px;
+    }
+}
+.section:not(.banner) {
+    background: rgba(0,0,0,0.55);
+    backdrop-filter: blur(6px);
+}
+#danh-sach-trai-vien ul {
+    max-height: 70vh;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
 
 
